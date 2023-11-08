@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JavaScript</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p id="exp">Message</p>
+    <button type="button" onclick="myfunc1()">Msg 1</button>
+    <button type="button" onclick="myfunc2()">Msg 2</button>
+    <button type="button" onclick="myfunc3()">Msg 3</button>
+
+    <h1>Addition</h1>
+    <p id="cal"></p>
+
+    <script>
+        function myfunc1(){
+            document.getElementById("exp").innerHTML = "Good Morning";
+        }
+
+        function myfunc2(){
+            document.getElementById("exp").innerHTML = "Good Afternoon";
+        }
+
+        function myfunc3(){
+            document.getElementById("exp").innerHTML = "Good Evening";
+        }
+
+        window.alert("You are leaving our website");
+        console.log("Please leave the website");
+        window.confirm("Are you 18+ ?");
+
+        var a, b, sum;
+        a = 25;
+        b = 20;
+        sum = a + b;
+        console.log("Sum of two numbers is = " + sum);
+        document.getElementById("cal").innerHTML = sum;
+
+    </script>
+</body>
+</html>

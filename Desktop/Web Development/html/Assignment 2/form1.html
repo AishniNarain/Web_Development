@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Office Form</title>
+    </head>
+    <body>
+
+        <br><br>
+        <form method="post" style="width: 500px; ">
+            <fieldset>
+                <!--<legend>Enter your data</legend>-->
+        <table border="0" align="center" cellpadding="7px" cellspacing="5px">
+            <tr>
+                <td>
+                    <label for="myname">Name: <span style="color: red;">*</span> </label>
+                </td>
+                <td>
+                    <input type="text" id="myname" name="myname" placeholder="Enter your name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd">Password: <span style="color: red;">*</span> </label>
+                </td>
+                <td>
+                    <input type="password" id="pwd" name="pwd">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="phno">Phone Number: </label>
+                </td>
+                <td>
+                    <input type="number" id="phno" name="phno">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="emailid">Email Id: </label>
+                </td>
+                <td>
+                    <input type="email" id="emailid" name="emailid">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="dob">DOB: </label>
+                </td>
+                <td>
+                    <input type="date" id="dob" name="dob">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="address">Address: </label>
+                </td>
+                <td>
+                    <textarea name="address" id="address" cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="gender">Gender: </label>
+                </td>
+                <td>
+                    <input type="radio" id="gender" name="gender" value="male">Male</input><br>
+                    <input type="radio" id="gender" name="gender" value="female">Female</input>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="profile">Profile: </label>
+                </td>
+                <td>
+                    <input type="radio" id="profile" name="profile" value="dev" >Development </input><br>
+                    <input type="radio" id="profile" name="profile" value="test">Testing</input>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tech">Technology: </label>
+                </td>
+                <td>
+                    <input type="checkbox" id="tech" name="tech" value="Java">Java</input><br>
+                    <input type="checkbox" id="tech" name="tech" value="sql">SQL</input><br>
+                    <input type="checkbox" id="tech" name="tech" value="Angular">Angular</input><br>
+                    <input type="checkbox" id="tech" name="tech" value="Node">Node</input><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City: </label>
+                </td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="choose" name="choose"> Choose your City </option>
+                        <option value="noida" name="noida"> Noida </option>
+                        <option value="hyderabad" name="hyderabad"> Hyderabad </option>
+                        <option value="bangalore" name="bangalore">Bnagalore </option>
+                        <option value="goa" name="goa">Goa </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="resume">Upload Resume: </label>
+                </td>
+                <td>
+                    <input type="file" id="resume" name="resume">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit" id="submit" name="submit">Submit</button>
+                </td>
+                <td>
+                    <input type="reset" id="reset" name="rest"></input>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+        </form>
+    </body>
+</html>

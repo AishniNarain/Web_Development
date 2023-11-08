@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 1px solid blue;
+            /* box-sizing: border-box; */
+            
+        }
+
+        .div2{
+            width: 300px;
+            height: 100px;
+            border: 1px solid red;
+            padding: 50px;
+            /* box-sizing: border-box; */
+            /* margin:10px; */
+        }
+
+        .div3{
+            width: 300px;
+            height: 100px;
+            border: 1px dashed green;
+            padding: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="div1">Hello</div>
+
+    <div class="div2">Welcome</div>
+
+    <div class="div3">CSS Box sizing</div>
+</body>
+</html>

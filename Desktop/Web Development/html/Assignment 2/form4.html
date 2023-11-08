@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Fourth Form</title>
+    </head>
+    <body>
+        <br><br>
+
+        <h1>My Feedback Form</h1>
+         
+        <br>
+
+        
+            <form action="Final.html" method="post">
+                
+            <ul>
+                <li>
+                    <label for="name">Name: </label> 
+                    <input type="text" name="name" id="name">
+                </li>
+            <br><br>
+                    
+                <li>
+                    <label for="email">Email: </label> 
+                    <input type="email" name="email" id="email"><br><br>
+                </li>
+            <br>         
+            
+                <li>
+                    <label for="pwd">Password: </label> 
+                    <input type="password" name="pwd" id="pwd"><br><br>
+                </li>
+            <br>
+                        
+                <li>
+                    <label for="option">Please check all the emotions that apply to you: </label> 
+                        <ul type="disc">
+                            <li><label for="option">Angry</label><input type="checkbox" name="option" id="option"></li>
+                            <li><label for="option">Happy</label><input type="checkbox" name="option" id="option"></li>
+                            <li><label for="option">Sad</label><input type="checkbox" name="option" id="option"></li>
+                            <li><label for="option">Ambivalent</label><input type="checkbox" name="option" id="option"></li>
+                        </ul>
+                </li>
+            <br>   
+                <li>      
+                    <label for="option">How satisfied were you with our service? </label> 
+                        <ul type="disc">
+                            <li><label for="option">Very Satisfied</label><input type="radio" name="option" id="option"></li>
+                            <li><label for="option">Satisfied</label><input type="radio" name="option" id="option"></li>
+                            <li><label for="option">Didn't care</label><input type="radio" name="option" id="option"></li>
+                            <li><label for="option">Dissatisfied</label><input type="radio" name="option" id="option"></li>
+                            <li><label for="option">Very Dissatisfied</label><input type="radio" name="option" id="option"></li>
+                        </ul>
+                </li>
+            <br>
+
+                <li>           
+                    <label for="comment">Further Comments: </label>
+                    <textarea name="comment" id="comment" cols="25" rows="3"></textarea>
+                </li>
+            <br>
+
+                <li>
+                    <label for="iamge">Bio Photo: </label>
+                    <input type="file" name="image" id="image">
+                </li>
+            <br>
+            
+                <li>
+                    <label for="location">Location: </label>
+                        <select name="location" id="location">
+                            <option value="select" name="location">Select location</option>
+                            <option value="noida" name="location">Noida</option>
+                            <option value="hyderabad" name="location">Hyderabad</option>
+                            <option value="bangalore" name="location">Bangalore</option>
+                        </select>
+                </li>
+            <br>
+        </ul>
+        
+        <ul>
+            <li><button type="submit" name="submit" value="submit">Submit</button></li>
+        </ul>
+                            
+            </form>
+        </ul>
+    </body>
+</html>

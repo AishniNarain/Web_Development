@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Display in HTML</title>
+    <style>
+        .navbar{
+            /* border:  solid black; */
+            display: flex;
+            justify-content: space-between;
+            background-color: antiquewhite;
+            font-variant: small-caps;
+            
+        }
+
+        .brand{
+            /* border:  solid black; */
+            margin-left: 10px;
+            cursor: pointer;
+            
+        }
+
+        .links{
+            /* border: solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .links a{
+            /* border: solid black; */
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="brand">
+            <h1>Company</h1>
+        </div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Privacy</a>
+            <a href="">Help</a>
+            
+        </div>
+    </div>
+</body>
+</html>

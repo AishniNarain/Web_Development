@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var c = 300
+        let a = 30
+        if(true){
+            let a =10
+            var b =20
+            const c = 30
+            console.log("INNER:", a);
+        }
+
+        console.log(a)
+        // console.log(b)
+        console.log(c)
+
+        function one(){
+
+            const username = "Aishni"
+
+            function two(){
+                const website = "youtube"
+                console.log(username)
+            }
+            // console.log(website)
+
+            // two()
+        }
+
+        // one()
+
+        if(true){
+            const username = "Aishni"
+
+            if(username === "Aishni"){
+                const website = "youtube"
+                console.log(username + " " + website)
+            }
+
+            // console.log(website);
+        }
+
+        // console.log(username);
+
+        const user = {
+            username : "Aishni",
+            price : 999,
+
+            welcomeMsg : function(){
+                console.log(`${this.username} , welcome to the website`);
+                console.log(this);
+            }
+        }
+
+        user.welcomeMsg()
+        user.username = "sam"
+        user.welcomeMsg()
+
+        // function chai(){
+        //     let username = "aishni"
+        //     console.log(this.username);
+        // }
+
+        // chai() // this can't be used inside functions directly
+
+        // arrow function
+        const chai = () => {
+            let username = "aishni"
+            console.log(this);
+        }
+
+        chai()
+
+        // const addTwo = (num1, num2) => {
+        //     return num1 + num2
+        // }
+
+        // const addTwo = (num1, num2) => num1 + num2
+        // const addTwo = (num1, num2) => (num1 + num2)
+        const addTwo = (num1, num2) => ({username : "Hitesh"})
+
+        // return statement is always used with curly braces only
+        console.log(addTwo(3, 5));
+
+        
+
+    </script>
+</body>
+</html>

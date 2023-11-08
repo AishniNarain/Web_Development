@@ -1,0 +1,37 @@
+.mydiv{
+    color:black;
+    background-color: aqua;
+    border: red 5px outset;
+    font-size: 20px;
+}
+
+.leftdiv{
+    float: left;
+}
+
+.middlediv{
+    float: left;
+    background-color: grey;
+}
+
+.rightdiv{
+    float:left;
+}
+
+div{
+    padding: 1%;
+    color: black;
+    background-color: rgb(165, 86, 165);
+    width: 30%;
+    border: solid black;
+    margin-bottom: 1px;
+}
+
+.color{
+    padding: 1%;
+    color: black;
+    background-color: rgb(98, 216, 68);
+    height: 200px;
+    width: 600px;
+    border: solid black;
+}

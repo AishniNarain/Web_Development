@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Table 3</title>
+        <style>
+            table{
+                border: 3px solid black;
+            }
+
+            th,tr,td{
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            th{
+                background-color: rgb(253, 137, 95);
+            }
+
+            td{
+                background-color: rgb(207, 203, 203);
+            }
+
+            td:hover, td:hover a{
+                background-color: rgb(120, 226, 120);
+                color: blue;
+                font-size: 25px;
+                font-weight: bold;
+                transition-duration: 0.1s;
+            }
+
+            a{
+                color: black;
+                text-decoration: none;
+            }
+
+            /* a:hover{
+                color:black;
+            } */
+        </style>
+    </head>
+    <body>
+        <br>
+
+        <center><h1>TIME TABLE</h1></center>
+
+        <center>
+            <table cellpadding="20px" cellspacing="1px">
+                <th><h2>Day/Period</h2></th>
+                <th><h2>I <br>9:30-10:20</h2></th>
+                <th><h2>II <br>10:20-11:10</h2></th>
+                <th><h2>III <br>11:10-12:00</h2></th>
+                <th><h2>12-12:40</h2></th>
+                <th><h2>IV <br>12:40-1:30</h2></th>
+                <th><h2>V <br>1:30-2:20</h2></th>
+                <th><h2>VI <br>2:20-3:10</h2></th>
+                <th><h2>VII <br>3:10-4:00</h2></th>
+
+                <tr>
+                    <th ><h2>Monday</h2></th>
+                    <td>Eng</td>
+                    <td>Math</td>
+                    <td>Che</td>
+                    <td rowspan="9" style="background-color: plum;"><h1>L <br> U <br> N <br> C <br> H</h1></td>
+                    <td colspan="3" cellpadding="50px">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                    <th><h2>Tuesday</h2></th>
+                    <td colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                <tr>
+                    <th><h2>Wednesday</h2></th>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                <tr>
+                    <th><h2>Thursday</h2></th>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td><a href="id.html#poly">Java Programming</a></td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                <tr>
+                    <th><h2>Friday</h2></th>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td>Eng</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <th><h2>Saturday</h2></th>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td colspan="3">SEMINAR</td>
+                    <td>SPORTS</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

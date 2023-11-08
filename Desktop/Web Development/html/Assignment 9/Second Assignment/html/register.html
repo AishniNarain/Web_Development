@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/action.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navitems">
+            <nav>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </div>
+
+    <h1>Register Here</h1>
+
+    <form>
+        <fieldset>
+            <table cellpadding = "10px" cellspacing="10px">
+                
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name"></input><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phno">Phone:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="phno" id="phno"></input><br>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email"></input><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" id="pwd"></input><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" style="font-size: 18px; margin-top: 20px;" onclick="saveData()">
+                    </td>
+                </tr>  
+            </table>
+        </fieldset>
+    </form>
+    <script src="../js/register.js"></script>
+</body>
+</html>

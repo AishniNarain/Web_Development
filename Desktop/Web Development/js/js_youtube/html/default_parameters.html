@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function add(a,b,c=70){
+        //     console.log(`a is ${a}, b is ${b} and c is ${c}`);
+        // }
+
+        // add(10,20);
+        // add(10,20,30);
+        // add(10);
+
+        // not used
+
+        // function add(a,b=70,c){
+        //     console.log(`a is ${a}, b is ${b} and c is ${c}`);
+        // }
+
+        // add(10,20);
+        // add(10,20,30);
+        // add(10);
+
+
+        function add(a,b=50,c=70){
+            console.log(`a is ${a}, b is ${b} and c is ${c}`);
+        }
+
+        add(10,20);
+        add(10,20,30);
+        add(10);
+
+        // null values in function
+
+        console.log("************************************************");
+        function sum(a,b,c=null){
+            console.log(`a is ${a}, b is ${b} and c is ${c}`);
+        }
+
+        sum(10,20);
+        sum(10,20,30);
+        sum(10);
+
+        // array default values
+
+        function add_num(a=[101]){
+            console.log("Value of a is " + a[0]);
+            console.log();
+        }
+
+        add_num([10]);
+        add_num();
+
+        
+    </script>
+</body>
+</html>

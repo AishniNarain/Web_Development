@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            margin-top: 20px;
+        }
+
+        label{
+            font-size: 18px;
+        }
+
+        button{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SIMPLE FORM</h1>
+    <!-- <form onsubmit="accessed_data()">
+         -->
+    <form onsubmit="getData()">
+        <fieldset>
+        <table cellpadding = "10px">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="arr" id="name"></input><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="phno">Phone:</label>
+                </td>
+                <td>
+                    <input type="number" name="arr" id="phno"></input><br>
+                </td>
+            </tr>
+                
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="arr" id="email"></input><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="age">Age:</label>
+                </td>
+                <td>
+                    <input type="number" name="arr" id="age"></input><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit">
+                </td>
+            </tr>  
+        </table>
+    </fieldset>
+    </form>
+
+    <!-- <script src="form_data1.js"></script> -->
+    <script src="../js/form_data2.js"></script>
+</body>
+</html>

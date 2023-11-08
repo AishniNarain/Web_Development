@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/action.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navitems">
+            <nav>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </div>
+
+    <h1>Login</h1>
+
+    <form>
+        <fieldset>
+            <table cellpadding = "10px" cellspacing="10px">
+                
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email"></input><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pwd">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" id="pwd"></input><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" style="font-size: 18px; margin-top: 20px;" onclick="CheckData()">
+                    </td>
+                </tr>  
+            </table>
+        </fieldset>
+    </form>
+    <script src="../js/login.js"></script>
+</body>
+</html>

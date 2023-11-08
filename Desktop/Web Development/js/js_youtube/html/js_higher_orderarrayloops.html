@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const map = new Map();
+
+        map.set('IN', "India")
+        map.set('FR', "France")
+        map.set('USA', "United States of America")
+        // map.set('IN', "India")
+
+
+        console.log(map);
+
+        for(const [key,value] of map){
+            console.log(key, ':-', value)
+        }
+
+        const myObject = {
+            js : 'JavaScript',
+            cpp : 'C++',
+            java : 'Java',
+            py : 'Python'
+        }
+
+        for (const key in myObject){
+            // console.log(key); prints keys
+            console.log(myObject[key]);  // prints values
+        }
+
+        const programming = ["js","cpp","java","py"]
+
+        for(const key in programming){
+            // console.log(key);
+            console.log(programming[key]);
+        }
+
+        const program = ["js","cpp","java","py"]
+
+        program.forEach( function (val) {
+            console.log(val);
+        })
+
+        //using arrow function
+
+        program.forEach( (item) => {
+            console.log(item);
+        })
+
+        function print(item){
+            console.log(item);
+        }
+
+        program.forEach(print)
+
+        program.forEach( (item, index, arr) => {
+            console.log(item, index, arr);
+        })
+
+        const coding_sub = [
+            {
+                language_name : "JavaScript",
+                filename : "js"
+            },
+            {
+                language_name : "Java",
+                filename : "java"
+            },
+            {
+                language_name : "Python",
+                filename : "py"
+            }
+        ]
+
+        coding_sub.forEach( (item) => {
+                console.log(item.language_name);
+                console.log(item.filename);
+            }
+        )
+
+        // filter function
+
+        const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const result = number.filter( (num) => num > 4)
+
+        const res = number.filter( (num) => {
+            return num > 4
+        })
+
+        console.log(result);
+        console.log(res);
+
+        // same logic using forEach
+
+        const newNum = []
+
+        number.forEach( (num) => {
+            if(num > 4){
+                newNum.push(num)
+            }
+        })
+
+        console.log(newNum);
+
+        const my_num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const result1 = my_num.map( (num) => num + 10)
+
+        console.log(result1);
+
+        const new_num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const res1 = new_num
+                        .map( (num) => num * 10 )
+                        .map( ( num) => num + 1 )
+                        .filter( (num) => num > 40)
+
+        console.log(res1)
+
+        // reduce function
+
+        // const nums = [1, 2, 3]
+
+        // const total = nums.reduce( (acc, curr) => acc + curr , 0 )
+
+        // console.log(total);
+
+        const nums = [1, 2, 3]
+
+        const total = nums.reduce( function (acc, curr) {
+            return acc+ curr;
+        },0)
+
+        console.log(total);
+
+        const shoppingcart = [
+            {
+                itemname : "js course",
+                price : 999
+            },
+            {
+                itemname : "py course",
+                price : 599
+            },
+            {
+                itemname : "data science course",
+                price : 1999
+            }
+        ]
+
+        const carttotal = shoppingcart.reduce( (acc, item) => (acc + item.price),0)
+        console.log(carttotal);
+        
+                        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="test" onmouseover="mouseOverEvent()" onmouseout = "mouseOutEvent()">
+        <h1 id="hele" style="display: none;">Hello Everyone</h1>
+    </div>
+
+    <script>
+        var x = document.getElementById("test");
+        var y = document.getElementById("hele");
+
+        function mouseOverEvent(){
+            x.style.width = "400px";
+            x.style.backgroundColor = "brown";
+            y.style.color = "white";
+            x.style.transition = "2s";
+            y.style.display = "block";
+        }
+
+        function mouseOutEvent(){
+            x.style.width = "200px";
+            x.style.backgroundColor = "blueviolet";
+            y.style.display = "none";
+        }
+    </script>
+</body>
+</html>

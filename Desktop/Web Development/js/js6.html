@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Good <span id="exp">Morning</span></p>
+    <button type = "button" onclick="display_time()">Click me</button>
+    <script>
+        function display_time(){
+            let time = new Date().getHours()
+
+            
+            if (time < 12){
+                document.getElementById("exp").innerHTML = "Morning"
+            }
+
+            else if (time > 12 && time < 16){
+                document.getElementById("exp").innerHTML = "Afternoon"
+            }
+
+            if (time < 12){
+                document.getElementById("exp").innerHTML = "Evening"
+            }
+        }
+    </script>
+</body>
+</html>

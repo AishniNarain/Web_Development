@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="exp">Welcome to Canada and Canada is good place to earn</p>
+
+    <button type="button" onclick="myFunc()">Click</button>
+
+    <script>
+
+        function myFunc(){
+            var doc = document.getElementById("exp").innerHTML;
+            var txt = doc.replaceAll("Canada", "India");
+
+            document.getElementById("exp").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

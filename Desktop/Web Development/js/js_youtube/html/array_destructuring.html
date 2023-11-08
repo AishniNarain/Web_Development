@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= ["JavaScript", 6, "GeeksForGeeks"]
+
+        var[CourseName, duration, tutor] = a;
+        console.log(CourseName);
+        console.log(duration);
+        console.log(tutor);
+
+        var[CourseName, duration] = a;
+        console.log(CourseName);
+        console.log(duration);
+
+        var[CourseName, , tutor] = a;
+        console.log(CourseName);
+        console.log(tutor);
+        console.log("********************************");
+
+        var b,c;
+
+        [b,c] = [10,20];
+        console.log(b);
+        console.log(c);
+
+        [b,c=30] = [10,20];
+        console.log(b);
+        console.log(c);
+
+        [b=60,c=70] = [10,20];
+        console.log(b);
+        console.log(c);
+        console.log("********************************");
+
+        // Array passing to a function
+
+        var arr = [10, 20, 30,40, 50, 60];
+
+        function show([value1, value2, value3,...rest]){
+            console.log(value1);
+            console.log(value2);
+            console.log(value3);
+            console.log(rest);
+        }
+
+        show(arr);
+        console.log("********************************");
+
+        // Array returning from a function
+        var arr1 = [10, 20, 30];
+
+        function show1(z){
+            return z;
+        }
+
+        // var x = show1(arr1);
+        var[value1, value2, value3] = show1(arr1);
+        console.log(value1);
+        console.log(value2);
+        console.log(value3);
+        console.log("********************************");
+
+        //Nested Array Destructuring 
+
+        var b= ["JavaScript", 6, "GeeksForGeeks",["Aishni","Rahul"]];
+
+        var[CourseName, duration, tutor, [stu1, stu2]] = b;
+        console.log(CourseName);
+        console.log(duration);
+        console.log(tutor);
+        console.log(stu1);
+        console.log(stu2);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+        label, center{
+            font-size: 18px;
+        }
+
+
+        .main{
+            width: 1200px;
+            height: 647px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child{
+            width:1100px;
+            height: 540px;
+            background-color: white;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Survey Form</h1>
+        <div class=child>
+            <center>Let us know how we can improve freeCodeCamp</center>
+            <form action="Popup.html" method="post">
+                <table border="0" align="center" cellpadding="7px" cellspacing="7px" >
+
+                    <tr>
+                        <td align="right">
+                            <label for="myname" ><span style="color: black;">*</span> Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="myname" name="myname" placeholder="Enter your name">
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td align="right">
+                            <label for="emailid"><span style="color: black;">*</span> Email Id: </label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter your Email">
+                        </td>
+                    </tr> 
+        
+                    <tr>
+                        <td align="right">
+                            <label for="age"><span style="color: black;">*</span> Age: </label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" min="18" max="100" placeholder="Age">
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td align="right">
+                            <label for="role">Which option best describes your current role? </label>
+                        </td>
+                        <td>
+                            <select name="role" id="role">
+                                <option value="student" name="student">Student </option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td align="right">
+                            <label for="like">How likely is that you would recommend <br> freeCodeCamp to a friend?  </label>
+                        </td>
+                        <td>
+                            <input type="radio" id="like" name="like" value="select">Definitely</input><br>
+                            <input type="radio" id="recommend" name="recommend" value="maybe">Maybe</input><br>
+                            <input type="radio" id="recommend" name="recommend" value="sure">Sure</input>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td align="right">
+                            <label for="like">What do you like most in FCC </label>
+                        </td>
+                        <td>
+                            <select name="like" id="like">
+                                <option value="select" name="like">Select an option </option>
+                                <option value="Best" name="like">Best </option>
+                                <option value="Average" name="like">Average </option>
+                                <option value="Bad" name="like">Bad</option>
+                            </select>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td align="right">
+                            <label for="apply">Things that should be improved in the future <br> (Check all that apply): </label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="apply" name="apply" value="front-end ">Front-end Projects</input><br>
+                            <input type="checkbox" id="apply" name="apply" value="back-end">Back-end Projects</input><br>
+                            <input type="checkbox" id="apply" name="apply" value="data">Data Visualization</input>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button type="submit" name="submit">Submit</button>
+                        </td>
+                    </tr>
+        
+                </table>
+            </form>
+        </div>
+    </div>
+
+        
+</body>
+</html>
