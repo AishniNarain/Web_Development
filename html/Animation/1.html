@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Hover effects</title>
+    <style>
+        .box{
+            height: 20px;
+            width: 100px;
+            font-size: 20px;
+            border: 1px solid red;
+            border-radius: 20px;
+            padding: 20px;
+            /* margin-top: 10px;
+            margin-left: 30px; */
+            animation-name: colorchange;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation-delay: 3s; */
+        }
+
+        @keyframes colorchange {
+            from{
+                background-color: blue;
+                padding: 20px;
+                margin: 0px;
+            }
+            to{
+                background-color: rgb(27, 221, 27);
+                padding: 50px;
+                margin: 100px;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">Hello</div>
+</body>
+</html>

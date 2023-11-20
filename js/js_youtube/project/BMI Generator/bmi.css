@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-color: #797978;
+}
+
+#height, #weight{
+    width: 250px;
+    height: 20px;
+    margin-top: 25px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+button{
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#results{
+    font-size: 25px;
+    margin-top: 30px;
+    color: white;
+}
+
+h3{
+    font-size: 30px;
+}
+
+#weight-guide p{
+    font-size: 18px;
+}

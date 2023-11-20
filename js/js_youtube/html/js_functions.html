@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loginUserMessage(username = "aishni"){
+            if(username === undefined){
+                console.log("Please enter a username")
+                return
+            }
+            return `${username} just logged in`
+        }
+
+        console.log(loginUserMessage("alka"))
+
+        function CalculateCartPrice(...num){
+            return num
+        }
+
+        console.log(CalculateCartPrice(200, 400, 500));
+
+        const user = {
+            username : "Aishni",
+            price : 399
+        }
+
+        function handleobject(anyobject){
+            console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+        }
+
+        console.log(
+            {
+                username : "sam",
+                price : 199
+            }
+        )
+
+        const mynewArray = [200, 400, 500, 1000]
+
+        function getSecondValue(getArray){
+            return getArray[1]
+        }
+
+        console.log(getSecondValue(mynewArray))
+        console.log(getSecondValue([200, 700, 400, 900]))
+
+        
+    </script>
+</body>
+</html>

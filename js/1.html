@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program</title>
+</head>
+<body>
+    <!-- <p id="demo">JavaScript can change HTML content</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript" '>Click Me!</button> -->
+
+    <!-- <button>Namaste World!</button> -->
+
+    <button>Roll No. 1 : Rahul</button>
+    <!-- <script src="2.js"></script>  -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function(){
+        let namaste_button = document.querySelector('button');
+
+
+        namaste_button.addEventListener('click',inputMsg);
+
+        function inputMsg(){
+            let name = prompt("Enter a Student Name : ");
+            namaste_button.textContent = "Roll No. 1 : " + name;
+        }
+        });
+
+        let animal = {
+            name : "Zebra",
+            leg :4
+        }
+
+        for(key in animal){
+            console.log(key, animal[key]);
+        }
+
+        let names = ["Aishni", "Mohit", "Bharat"]
+
+        for(let name of names){
+            console.log(name);
+        }
+
+        for(let index in names){
+            console.log(index, names[index]);
+        }
+
+        var fullname = "Aishni Narain";
+
+        console.log(fullname.toUpperCase());
+        console.log(fullname.toLowerCase());
+        console.log(fullname.length);
+        console.log(fullname.charAt(7));
+        
+        var arr = new Array(2,4,6,8,9);
+        arr.push(10);
+        console.log(arr);
+        arr.sort();
+        console.log(arr);
+        arr.reverse();
+        console.log(arr);
+        arr.pop();
+        console.log(arr);
+        // console.log(arr.splice(2,1,5,3));
+        arr.splice(2,1,5,3);
+        console.log(arr);
+        arr["Country_Code"] = "+91";
+        console.log(arr);
+    </script>
+</body>
+</html>

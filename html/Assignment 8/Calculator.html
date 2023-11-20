@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+        }
+        table{
+            width: 18%;
+        }
+
+        /* tr{
+            text-align: center;
+        } */
+
+        td{
+            padding: 18px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            border: 8px solid black;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <table border="2" cellspacing="5px">
+        <tr>
+            <td colspan="3" style="border: 3px solid black; color:black; background-color: white;"><p id="input"></p></td>
+            <td  class="button" >C</td>
+        </tr>
+        <tr>
+            <td class="button" >1</td>
+            <td class="button" >2</td>
+            <td class="button" >3</td>
+            <td class="button" >Sin</td>
+        </tr>
+        <tr>
+            <td class="button" >4</td>
+            <td class="button" >5</td>
+            <td class="button" >6</td>
+            <td class="button" >Cos</td>
+        </tr>
+        <tr>
+            <td class="button" >7</td>
+            <td class="button" >8</td>
+            <td class="button" >9</td>
+            <td class="button" >Tan</td>
+        </tr>
+        <tr>
+            <td class="button" >+</td>
+            <td class="button" >-</td>
+            <td class="button" >*</td>
+            <td class="button" >/</td>
+        </tr>
+        <tr>
+            <td class="button" >.</td>
+            <td class="button" >0</td>
+            <td class="button" >=</td>
+            <td class="button" >%</td>
+        </tr>
+    </table>
+    <script src="style_cal.js"></script>
+</body>
+</html>

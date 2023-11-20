@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Tasty Food</title>
+    <link rel="shortcut icon" href="../images/applogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow-x: hidden;
+
+        }
+        .homebg{
+            margin: 30px auto;
+            /* position: absolute; */
+            height: 1000px;
+            width: 100%;
+            /* display: inline-block; */
+            /* border: 5px solid rgb(241,102,103); */
+            border-radius: 10px;
+            /* text-align: center; */
+        }
+
+        .homebg h1{
+            border: 4px solid black;
+            color: black;
+            border-radius: 10px;
+            position: relative;
+            bottom: 524px;
+            background-color: rgba(255, 166, 0, 0.507);
+            width: 452px;
+            text-align: center;
+            margin: 0px auto;
+            padding: 30px 40px;
+            font-weight: bold;
+        }
+
+        .menuitems{
+            /* position: absolute; */
+            text-align: center;
+            margin: 50px auto;
+            width: 50%;
+            font-size: 20px;
+        }
+
+        .menuitems img{
+            box-shadow: 0px 0px 10px blue;
+            /* border: 2px solid black; */
+        }
+
+        .menuitems img:hover{
+            box-shadow: 5px 5px 30px grey;
+            transition-duration: 1s;
+        }
+
+        .book{
+            margin: 100px auto;
+            width: 35%;
+            border: 5px solid green;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 30px 0;
+            box-shadow: 0px 0px 30px grey;
+        }
+
+        .book:hover{
+            border: 8px solid green;
+            box-shadow: 0px 0px 45px green;
+            transition-duration: 0.5s;
+            padding: 8px 5px;
+        }
+
+        .book a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .farm_fresh{
+            /* border: 1px solid black; */
+            width: 60%;
+            /* display: inline-block; */
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .container{
+            display: inline-block;
+            position: relative;
+            bottom: 83px;
+            /* border: 1px solid black; */
+            color: rgb(146, 96, 146);
+            letter-spacing: 1px;
+            text-shadow: 0px 0px 15px rgb(73, 69, 69);
+        }
+
+        .farm_img{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .brand{
+            /* border: 1px solid black; */
+            width: 80%;
+            margin: 60px auto;
+        }
+
+        .brand h1{
+            color: rgb(110, 87, 87);
+            text-align: center;
+            font-size:40px;
+            
+        }
+
+        .brand h1:hover{
+            text-shadow: 0px 0px 20px grey;
+            font-size: 50px;
+        }
+
+        .img .brand_img{
+            margin-right: 48px;
+            aspect-ratio: 1/1;
+            
+        }
+
+        .img{
+            /* border: 1px solid black; */
+            text-align: center;
+            margin-top: 57px;
+        }
+
+        .about_place{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 100px 10%;
+            text-align: justify;
+            text-indent: 1.5em;
+            color: rgb(187, 121, 187);
+            font-style: bold;
+        }
+
+        .social_links{
+            width: 30%;
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .icon1{
+            /* text-decoration: none;
+            color: black; */
+            background: url(../images/facebook.png) no-repeat scroll 0 0/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+        .icon1:hover{
+            background: url(../images/facebook.png) no-repeat scroll 0 bottom/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+        .icon2{
+            /* text-decoration: none;
+            color: black; */
+            background: url(../images/twitter.png) no-repeat scroll 0 0/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+        .icon2:hover{
+            background: url(../images/twitter.png) no-repeat scroll 0 bottom/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+        .icon3{
+            /* text-decoration: none;
+            color: black; */
+            background: url(../images/youtube.png) no-repeat scroll 0 0/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+        .icon3:hover{
+            background: url(../images/youtube.png) no-repeat scroll 0 bottom/30px 60px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            display: inline-block;
+            transition-duration: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hd">
+        <div class="logocontainer">
+            <a href="index.html"><img src="../images/applogo.jpg" alt="img" width="110px" height="110px"></a>
+        </div>
+        <div class="navitems">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="homebg">
+        <img src="../images/food-6056720_1920.jpg" alt="img" height="1000px" width="100%">
+        <h1>Welcome to The Food Paradise</h1>
+    </div>
+    
+    <div class="menuitems">
+        <table border="0" cellpadding="15px">
+            <tr>
+                <td><img src="../images/1.jpg" alt="img" width="400px" height="250px"></td>
+                <td><img src="../images/2.jpg" alt="img" width="400px" height="250px"></td>
+            </tr>
+            <tr>
+                <td>Indian Thali</td>
+                <td>South Indian Thali</td>
+            </tr>
+            <tr>
+                <td><img src="../images/3.jpg" alt="img" width="400px" height="250px"></td>
+                <td><img src="../images/4.jpg" alt="img" width="400px" height="250px"></td>
+            </tr>
+            <tr>
+                <td>Chilli Potato Rice</td>
+                <td>Dum Biryani</td>
+            </tr>
+            <tr>
+                <td><img src="../images/5.jpg" alt="img" width="400px" height="250px"></td>
+                <td><img src="../images/6.jpg" alt="img" width="400px" height="250px"></td>
+            </tr>
+            <tr>
+                <td>Idli</td>
+                <td>Butter Chicken</td>
+            </tr>
+            <tr>
+                <td><img src="../images/7.jpg" alt="img" width="400px" height="250px"></td>
+                <td><img src="../images/8.jpg" alt="img" width="400px" height="250px"></td>
+            </tr>
+            <tr>
+                <td>Fried Chicken</td>
+                <td>Tomato Sbji</td>
+            </tr>
+            
+            <tr>
+                <td><img src="../images/9.jpg" alt="img" width="400px" height="250px"></td>
+                <td><img src="../images/10.jpg" alt="img" width="400px" height="250px"></td>
+            </tr>
+            <tr>
+                <td>Daal Chawal</td>
+                <td>Aloo Sbji</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="book">
+        <h1><a href="contactus.html">Book a Table</a></h1>
+    </div>
+
+    <div class="farm_fresh">
+        <div class="container">
+            <h1>ORGANIC FARM</h1> 
+            <p style="font-style: italic; font-size: 20px;">We use only organic farm fresh vegetables and fruits</p>
+        </div>
+        <div class="farm_img">
+            <img src="../images/farm_fresh.jpg" alt="img" height="300px" width="450px">
+        </div>
+    </div>
+
+    <div class="brand">
+        <h1>Top Brands</h1>
+        <div class="img">
+            <a href="https://www.barbequenation.com/" target="new"> <img src="../images/brand1.png" alt="img"  class="brand_img"></a>
+            <a href="https://www.bk.com/" target="new" ><img src="../images/brand2.png" alt="img" target="new" class="brand_img"></a>
+            <a href="https://www.behrouzbiryani.com/" target="new"> <img src="../images/brand3.png" alt="img" target="new" class="brand_img"></a>
+            <a href="https://haldiram.com/" target="new" ><img src="../images/brand4.png" alt="img" target="new" class="brand_img"></a>
+        </div>
+    </div>
+
+    <div class="about_place">
+        <p>Indian cuisine is a natural part of the diet in the markets in which the Food Fantasy Restaurants operate. We continue to offer new menu options, both vegetarian and non-vegetarian, largely based on Indian cuisine and use seasonal customer preferences to introduce new dishes. We also run popular food festivals at our Food Fantasy Restaurants, thereby offering our customers a range of Indian and international cuisines.</p>
+    </div>
+
+    <footer>
+        <h1>Food Fantasy</h1>
+        <h2>About Food Fantasy</h2>
+        <p><a href="#">Who We Are</a></p>
+        <p><a href="#">Blogs</a></p>
+        <p><a href="#">Work With Us</a></p>
+        <p><a href="#">Feeding Hungry</a></p>
+        <p><a href="#">Contact Us</a></p>
+        <p style="font-size: 20px;">ISO: 9001 &copy; Food Fantasy &reg; Terms and Conditions &trade;</p>
+    </footer>
+
+    <div class="social_links">
+        <a href="http://www.Facebook.com" target="new" class="icon1">Facebook</a>
+        <a href="http://www.Twitter.co" target="new" class="icon2">Twitter</a>
+        <a href="http://www.Youtube.co" target="new" class="icon3">Youtube</a>
+    </div>
+    
+</body>
+</html>

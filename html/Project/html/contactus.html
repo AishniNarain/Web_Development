@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow-x: hidden;
+            
+
+        }
+        .body_content{
+            /* margin: 30px 20px; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            background-color: rgb(83, 83, 160);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        form {
+            color: black;
+            background-color: white;
+            display: flex;
+            /* align-items: center;
+            justify-content: center; */
+            padding: 2px;
+            /* border-radius: 5px; */
+            margin: 10 10 30px;
+        }
+
+        input {
+            border: none;
+            color: black;
+            background: transparent;
+            padding: 7px 8px;
+            font-size: 18px;
+            /* color: inherit; */
+            /* border: 1px solid transparent; */
+            /* border-radius: 30px; */
+        }
+
+        
+
+        button[type="submit"] {
+            text-indent: -999px;
+            /* overflow: hidden; */
+            width: 70px;
+            padding: 0;
+            margin: 0;
+            border: 1px solid transparent;
+            /* border-radius : 30px; */
+            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .content{
+            width: 95%;
+            height: 1000px;
+            /* border: 1px solid black; */
+            margin: 47px;
+            display: flex;
+        }
+
+        .box1{
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid blue; */
+        }
+
+        .box2{
+            width: 75%;
+            /* border: 1px solid red; */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .detail_img{
+            margin-top: 50px;
+            width: 300px;
+            height: 250px;
+            /* border: 1px solid black; */
+            /* margin-left: 30px; */
+            margin-right: 40px;
+            background-image: url(../images/image.jpg);
+        }
+
+        .contact{
+            width: 90%;
+            height: 70%;
+            /* border: 1px solid black; */
+            margin: 0px auto;
+        }
+
+        .c1,.c2{
+            width: 100%;
+            height: 50%;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+
+        .box{
+            width: 50%;
+            height: 100%;
+            /* border: 1px solid black; */
+            
+        }
+
+        .box p{
+            margin-left: 30px;
+        }
+
+        
+        hr{
+            margin-top: 0px;
+            margin-left: 30px;
+            width: 60%;
+            height: 1px;
+            background-color: rgb(89, 89, 187);
+            float: left;
+        }
+
+        .box button{
+            margin: 10px 0px 0px 30px;
+            width: 60%;
+            height: 15%;
+            background-color: rgb(207, 202, 202);
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+        }
+
+        .help select{
+            border: none;
+            margin-left: 30px;
+            width: 335px;
+            /* height: 30px; */
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="hd">
+        <div class="logocontainer">
+            <img src="../images/applogo.jpg" alt="img" width="110px" height="110px">
+            <h4>Food Fantasy</h4>
+        </div>
+        <div class="navitems">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="body_content">
+       
+
+    <div class="container">
+        <form>
+            <input type="search" placeholder="Search Support">
+            <button type="submit"></button>
+        </form>
+    </div>
+
+    </div>
+
+    <div class="content">
+        <div class="box1">
+            <div class="detail_img">
+                <h1 style="text-align: center; font-weight: bold;">We Missed <br> You!</h1>
+                <p style="text-align: center; font-size: 18px;">We're currently closed but <br> we're open every day, <br>
+                   except <span style="color: brown; font-weight: bold;">major holidays,</span></p>
+                <p style="text-align: center; font-size: 20px; color: blue; font-weight: bold;">6:00 A.M. - 11:00 P.M.</p>
+            </div>
+            
+        </div>
+        <div class="box2">
+            <p><span style="font-size: 35px;">&#8962;</span> <span"font-size: 25px; color: grey;>&gt;</span><span style="margin-left: 20px; font-size: 20px; color:grey">Contact Us</span></p>
+            <h1 style="color: grey;">Contact Us</h1>
+            <p style="font-size: 30px; color:grey">Contact Support</p>
+
+            <div class="contact">
+                <div class="c1">
+                    <div class="chat box">
+                        <p style="font-size: 30px;">Chat</p>
+                        <br>
+                        <p style="color:rgb(92, 81, 81);">What's supported ? </p>
+                        <p>Food Fantasy Family & related topics</p>
+                        <hr>
+                        <button type="button">Chat: Closed</button>
+                    </div>
+                    <div class="text box">
+                        <p style="font-size: 30px;">Text Message</p>
+                        <br>
+                        <p style="color:rgb(92, 81, 81);">What's supported ? </p>
+                        <p>Food Fantasy Family & related topics</p>
+                        <hr>
+                        <button type="button">Chat: Closed</button>
+                    </div>
+                </div>
+                <div class="c2">
+                    <div class="phone box">
+                        <p style="font-size: 30px;">Phone</p>
+                        <br>
+                        <p style="color:rgb(92, 81, 81);">What's supported ? </p>
+                        <p>All Food Fantasy products and services</p>
+                        <hr>
+                        <button type="button">Phone: Closed</button>
+                    </div>
+                    <div class="help box">
+                        <p style="font-size: 30px;">Help Ticket</p>
+                        <br>
+                        <p style="color:rgb(92, 81, 81);">What's supported ? </p>
+                        <p>Varies by topics selected</p>
+                        <hr><br>
+                        <p>How can we help you ?</p>
+                        <select name="option" id="option">
+                            <option name="option "value="Select">Select a topic</option>
+                        </select>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2048&amp;height=623&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;width:2040px;height:623px;margin: 30px; margin-right: 30px;}.gmap_canvas {overflow:hidden;background:none!important;width:2040px;height:623px;}.gmap_iframe {width:2040px!important;height:623px!important;}</style></div>
+
+<footer>
+    <h1>Food Fantasy</h1>
+    <h2>About Food Fantasy</h2>
+    <p><a href="#">Who We Are</a></p>
+    <p><a href="#">Blogs</a></p>
+    <p><a href="#">Work With Us</a></p>
+    <p><a href="#">Feeding Hungry</a></p>
+    <p><a href="#">Contact Us</a></p>
+    <p style="font-size: 20px;">ISO: 9001 &copy; Food Fantasy &reg; Terms and Conditions &trade;</p>
+</footer>
+
+<div class="social_links">
+    <a href="http://www.Facebook.com" target="new" class="icon1">Facebook</a>
+    <a href="http://www.Twitter.co" target="new" class="icon2">Twitter</a>
+    <a href="http://www.Youtube.co" target="new" class="icon3">Youtube</a>
+</div>
+
+</body>
+</html>

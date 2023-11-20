@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employee(name, age, basicsal){
+            this.name = name;
+            this.age = age;
+            this.basicsal = basicsal;
+
+            // let keyword allows to use abstraction feature as it's scope is limited with the {} braces
+            let bonus = 3000
+            
+            let calfinalsal = function(){
+                finalsal = basicsal + bonus
+                console.log(`Final salary is : ${finalsal}`);
+            }
+
+            this.display = function(){
+                console.log(`Name is : ${this.name}, Age is : ${this.age}`)
+                calfinalsal();
+            }
+        }
+
+        emp1 = new Employee("Aishni",22,20000)
+        emp1.display();
+        
+        
+    </script>
+</body>
+</html>
